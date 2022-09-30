@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Form aracılığıyla bir bilgiyi action içinde tanımlanan adrese gönderiyoruz, bu adres aslında bir dosyaya karşılık geliyor. Ve bu dosya içerisinde bir server kodu oluşturuluyor. Form oluşturup, form içerisindeki belirli form elemanları aracılığıyla kullanıcılardan bilgileri topluyoruz,topladığımız bilgileri servera göndereceğiz ve bu server tarafında yazdığımız kodda gönderilen bilgileri alığ herhangi bir yerde kullanacak.-->
+
+    <form action="register.php">
+      <div>
+        <label for="name">Adınız</label>
+        <input type="text" id="name" />
+      </div>
+
+      <div>
+        <label for="surname">Soyad</label>
+        <input type="text" id="surname" />
+      </div>
+      <!-- name=proglama demeden önce seçenekklerin hepsi tıklanabilir oluyordu. name="programlama" ile seçenekleri aynı gruba alarak yalnızca bir tanesinin seçilmesini sağlıyoruz. -->
+
+      <div>
+        <label for="intro">Kendini Anlat</label>
+        <textarea id="intro" cols="10"></textarea>
+      </div>
+      <div>
+        <p>En sevdiğin problama dili?:</p>
+        <input type="radio" id="python" name="programlama" />
+        <label for="python">PYTHON</label>
+
+        <input type="radio" id="JAVA" name="programlama" />
+        <label for="JAVA">JAVA</label>
+
+        <input type="radio" id="JS" name="programlama" />
+        <label for="JS">JS</label>
+      </div>
+      <!-- CHECKBOX İLE BİRDEN ÇOK SEÇENEK SEÇİLEBİLİR. -->
+      <div>
+        <p>En sevdiğin problama dili?:</p>
+        <input type="checkbox" id="python3" />
+        <label for="python">PYTHON</label>
+
+        <input type="checkbox" id="JAVA1" />
+        <label for="JAVA">JAVA</label>
+
+        <input type="checkbox" id="JS2" />
+        <label for="JS">JS</label>
+      </div>
+      <div>
+        <label for="cities">Şehir</label>
+        <select id="cities">
+          <option value="41">Kocaeli</option>
+          <option value="34">İstanbul</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="eposta">Email</label>
+        <input type="email" id="eposta" />
+      </div>
+
+      <div>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" />
+      </div>
+
+      <button type="submit">Kaydet</button>
+      <button type="reset">Temzile</button>
+    </form>
+  </body>
+</html>
