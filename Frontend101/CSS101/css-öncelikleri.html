@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* Aşağıdaki #page-title ve h1 etiketleri ayni işlevleri yapıyor bu durumda iki farklı renk atamasında öncelik hangi renk olacağını bilmek önemli. #page-title'da id üzerinden işlem yapıldığı için metin rengi chocolate olacak */
+      /* CSS Öncelikleri:
+      inline css
+      id selector
+      class selector
+      tag selector
+      browser defaults */
+      #page-title {
+        color: chocolate;
+      }
+      h1 {
+        color: blue;
+      }
+      .text-yellow {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1 id="page-title" class="text-white">Welcome To MovieApp</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, illum.
+        </p>
+      </section>
+      <section>
+        <h2 id="page-subtitle" class="text-white">How it works?</h2>
+      </section>
+    </main>
+  </body>
+</html>
