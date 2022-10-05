@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 1-Descendant Selector ( ) --> */
+      /* - Descendants selector: Belirli bir öğenin alt öğeleri olan tüm öğelere eşleşir. */
+      /* div p {
+        background-color: red;
+      } */
+
+      /* <!-- 2-Child Selector(>)  --> */
+      /* Child Selector: belirtilen bir öğenin çocukları olan tüm öğeleri seçer. */
+      /* div > p {
+        background-color: red;
+      } */
+
+      /* 3-Adjacent Sibling Selector(+) */
+
+      /* Adjacent Sibling Selector: doğrudan başka bir belirli öğeden sonra gelen bir öğeyi seçmek için kullanılır.
+      Kardeş öğeler aynı üst öğeye sahip olmalıdır ve "bitişik", "hemen takip eden" anlamına gelir */
+
+      /* div + p {
+        background-color: red;
+      } */
+
+      /* 4-General Sibling Selector(~) */
+      /* General Sibling Selector :Genel kardeş seçici, belirtilen bir öğenin sonraki kardeşleri olan tüm öğeleri seçer. */
+      div ~ p {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Combinators -->
+
+    <p>1.Paragraf</p>
+    <div>
+      <p>2.paragraf</p>
+      <p>3.paragraf</p>
+      <section>
+        <p>4.paragraf</p>
+      </section>
+    </div>
+    <p>5.paragraf</p>
+    <p>6.paragraf</p>
+  </body>
+</html>
