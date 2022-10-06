@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      p::first-line {
+        font-weight: bold;
+        color: brown;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+      }
+
+      /* Dikkat: (p .about) şeklinde yazsaydık bu durumda p etiketinin altındaki about classına sahip olan bütün elemenlar
+      kast edilmiş olur.
+      (p.about) dediğimizde ise; Bu durumda classı about olan p etiketini seç demiş oluyoruz. 
+      (p#about) dediğimizde id-si about verilmiş olan p etiketini bul demiş oluyoruz.*/
+
+      p.about::first-line {
+        color: blue;
+      }
+
+      p::first-letter {
+        font-size: 48px;
+      }
+
+      ::selection {
+        background-color: yellow;
+      }
+      p::after {
+        content: "\261D"; /* Hex code */
+        font-size: 25px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Pseudo elements: Herhangi bir elementin parçasına müdahele ediyoruz. -->
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, enim.
+      Ipsum neque in quia accusantium ullam, placeat temporibus aliquid
+      veritatis veniam nostrum, modi inventore ex laudantium nisi, fuga aperiam
+      deserunt!
+    </p>
+
+    <p class="about">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nisi
+      facilis dolore delectus officiis, possimus totam error provident autem,
+      voluptate similique asperiores ex sint voluptatum itaque assumenda modi
+      incidunt? Iure.
+    </p>
+  </body>
+</html>
