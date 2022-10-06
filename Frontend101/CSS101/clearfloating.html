@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #container {
+      background-color: chocolate;
+    }
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: brown;
+      float: right;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  </style>
+  <body>
+    <div id="container" class="clearfix">
+      <div class="box">Kutu</div>
+      <div class="box">Daire</div>
+      <div class="box">Plazma</div>
+      <!-- <div style="clear: both"></div> -->
+    </div>
+    <p id="p1">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, voluptas
+      et. Dicta maiores dignissimos dolores quam aspernatur, deserunt odio,
+      reiciendis iure explicabo nihil tenetur, esse debitis voluptatum nemo
+      facilis dolorum.
+    </p>
+  </body>
+</html>
